@@ -215,4 +215,26 @@ html {
 .mermaid-container .edgeLabel {
   color: #cbd5e1;
   font-size: 12px;
+
+/* Custom table styles for prose (markdown tables) */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 1em;
+}
+.prose th,
+.prose td {
+  border: 1px solid var(--color-border);
+  padding: 0.5em 1em;
+  text-align: left;
+}
+.prose th {
+  background-color: var(--color-muted);
+  color: var(--color-foreground);
+}
+.prose tr:nth-child(even) td {
+  background-color: var(--color-card);
+}
+
 }
