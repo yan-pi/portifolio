@@ -1,6 +1,9 @@
 {
-  "name": "nim",
+  "name": "digital-garden",
   "version": "0.1.0",
+  "description": "My digital garden built with Next.js and MDX",
+  "author": "yan-pi",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
