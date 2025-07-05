@@ -5,6 +5,8 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import { useMDXComponents } from '@/mdx-components'
+
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -101,7 +103,7 @@ export default async function BlogPost({ params }: Props) {
       </header>
 
       <div className="prose prose-neutral dark:prose-invert max-w-none">
-        <MDXRemote source={content} />
+        <MDXRemote source={content} components={useMDXComponents({})} />
       </div>
     </article>
   )

@@ -186,31 +186,33 @@ html {
   .theme-border-radius-xl {
     border-radius: var(--border-radius-xl);
   }
-
-/* MDX Table Styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  font-size: 1rem;
-  background: var(--color-card);
-  color: var(--color-foreground);
-}
-th, td {
-  border: 1px solid var(--color-border);
-  padding: 0.75em 1em;
-  text-align: left;
-}
-th {
-  background: var(--color-muted);
-  color: var(--color-foreground);
-}
-tr:nth-child(even) {
-  background: var(--color-muted);
-}
-tr:hover {
-  background: var(--color-accent);
-  color: var(--color-accent-foreground);
 }
 
+.mermaid-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.mermaid-container .node rect,
+.mermaid-container .node circle,
+.mermaid-container .node ellipse,
+.mermaid-container .node polygon {
+  fill: #1e293b;
+  stroke: #3b82f6;
+  stroke-width: 2px;
+}
+
+.mermaid-container .edgePath .path {
+  stroke: #64748b;
+  stroke-width: 2px;
+}
+
+.mermaid-container .nodeLabel {
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.mermaid-container .edgeLabel {
+  color: #cbd5e1;
+  font-size: 12px;
 }
